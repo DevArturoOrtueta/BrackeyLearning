@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dxgmmyuaxcqp6"]
+[gd_scene load_steps=14 format=3 uid="uid://dxgmmyuaxcqp6"]
 
 [ext_resource type="PackedScene" uid="uid://cpnxb0al13vy5" path="res://scenes/player.tscn" id="1_234tq"]
 [ext_resource type="Texture2D" uid="uid://c40a0year527v" path="res://assests/sprites/world_tileset.png" id="2_5mdj5"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dk5gfoqcscf7m" path="res://scenes/coin.tscn" id="4_p3y8p"]
 [ext_resource type="PackedScene" uid="uid://dq6rqqrdhhv4t" path="res://scenes/killzone.tscn" id="5_hmduo"]
 [ext_resource type="PackedScene" uid="uid://dkfncnortdn7w" path="res://scenes/slime.tscn" id="6_gh6vx"]
+[ext_resource type="FontFile" uid="uid://cicvjx405l8hk" path="res://assests/fonts/PixelOperator8.ttf" id="7_eg3tc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4q0wv"]
 texture = ExtResource("2_5mdj5")
@@ -525,3 +526,35 @@ position = Vector2(25, 36)
 
 [node name="Slime3" parent="." instance=ExtResource("6_gh6vx")]
 position = Vector2(88, -44)
+
+[node name="Node2" type="Node" parent="."]
+
+[node name="Label2" type="Label" parent="Node2"]
+offset_left = 730.0
+offset_top = -118.0
+offset_right = 826.0
+offset_bottom = -107.0
+theme_override_colors/font_color = Color(0, 0.705882, 1, 1)
+theme_override_fonts/font = ExtResource("7_eg3tc")
+theme_override_font_sizes/font_size = 8
+text = "Almost there."
+
+[node name="Label3" type="Label" parent="Node2"]
+offset_left = 349.0
+offset_top = 37.0
+offset_right = 445.0
+offset_bottom = 48.0
+theme_override_colors/font_color = Color(0, 0, 0.560784, 1)
+theme_override_fonts/font = ExtResource("7_eg3tc")
+theme_override_font_sizes/font_size = 8
+text = "Falling hurts..."
+
+[node name="Label" type="Label" parent="Node2"]
+offset_left = -117.0
+offset_top = -26.0
+offset_right = -25.0
+offset_bottom = -15.0
+theme_override_colors/font_color = Color(0, 0, 0.513726, 1)
+theme_override_fonts/font = ExtResource("7_eg3tc")
+theme_override_font_sizes/font_size = 8
+text = "Space to Jump."
