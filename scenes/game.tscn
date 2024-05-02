@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://dxgmmyuaxcqp6"]
+[gd_scene load_steps=15 format=3 uid="uid://dxgmmyuaxcqp6"]
 
 [ext_resource type="PackedScene" uid="uid://cpnxb0al13vy5" path="res://scenes/player.tscn" id="1_234tq"]
 [ext_resource type="Script" path="res://scripts/GameManager.gd" id="1_r2a8n"]
@@ -8,7 +8,6 @@
 [ext_resource type="PackedScene" uid="uid://dq6rqqrdhhv4t" path="res://scenes/killzone.tscn" id="5_hmduo"]
 [ext_resource type="PackedScene" uid="uid://dkfncnortdn7w" path="res://scenes/slime.tscn" id="6_gh6vx"]
 [ext_resource type="FontFile" uid="uid://cicvjx405l8hk" path="res://assests/fonts/PixelOperator8.ttf" id="7_eg3tc"]
-[ext_resource type="PackedScene" uid="uid://ckv3uay776gon" path="res://scenes/music.tscn" id="9_x0d56"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4q0wv"]
 texture = ExtResource("2_5mdj5")
@@ -586,5 +585,3 @@ theme_override_colors/font_color = Color(0, 0, 0.819608, 1)
 theme_override_fonts/font = ExtResource("7_eg3tc")
 theme_override_font_sizes/font_size = 8
 text = "You made it!"
-
-[node name="Music" parent="." instance=ExtResource("9_x0d56")]
